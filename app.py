@@ -108,5 +108,5 @@ if run_btn:
         y_min, y_max = ax2.get_ylim()
         ax2.fill_between(df.index, y_min, y_max, where=df['Signal']==1, color='green', alpha=0.1, label='Buy Signal')
         
-        ax2.set_title(f"{ticker} EPS Trend & Buy Signals")
+        ax2.set_title(f"EPS Trend & Buy Signals")
         ax2.legend(); st.pyplot(fig2)
